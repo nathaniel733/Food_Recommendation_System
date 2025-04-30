@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+    padding: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ff7a00;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #ff8c1a;
+    margin-top: 30px;
+    border-bottom: 2px solid #ffd1a3;
+    padding-bottom: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ff6600;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e65c00;
+  }
+  
+  .nutrition-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nutrition-list li {
+    margin-bottom: 8px;
+    font-size: 17px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table thead {
+    background-color: #ffb84d;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #eee;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #fff0e0;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .back-button:hover {
+    color: #cc5200;
+  }
+  

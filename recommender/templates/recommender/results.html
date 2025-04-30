@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendations</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🥑 FoodBuddy AI Results</h1>
+
+    <h2>Your Daily Nutrient Needs</h2>
+    <ul class="nutrition-list">
+      <li><strong>Calories:</strong> {{ needs.Calories }}</li>
+      <li><strong>Protein:</strong> {{ needs.Protein }} g</li>
+      <li><strong>Fat:</strong> {{ needs.Fat }} g</li>
+      <li><strong>Carbohydrates:</strong> {{ needs.Carbohydrates }} g</li>
+    </ul>
+
+    <h2>Top Recommended Foods</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Food</th>
+          <th>Calories</th>
+          <th>Protein</th>
+          <th>Fat</th>
+          <th>Carbohydrates</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for food in foods %}
+        <tr>
+          <td>{{ food.food }}</td>
+          <td>{{ food.Caloric }}</td>
+          <td>{{ food.Protein }}</td>
+          <td>{{ food.Fat }}</td>
+          <td>{{ food.Carbohydrates }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <a class="back-button" href="/">← Back to Home</a>
+  </div>
+</body>
+</html>
